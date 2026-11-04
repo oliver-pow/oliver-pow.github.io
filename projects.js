@@ -129,11 +129,11 @@ const projects = [
 
     ],
 
-    details: "Write about the goal of the project, how you designed and assembled it, and what currently works. Include the problems you ran into and how you solved them.",
+    details: "",
 
-    challenges: "Describe one or two specific technical problems and the steps you took to troubleshoot them.",
+    challenges: "",
 
-    outcome: "Explain the final result honestly. Mention what works, what is incomplete and what you learned.",
+    outcome: "",
 
     link: "",
 
