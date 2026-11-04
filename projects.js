@@ -5,7 +5,7 @@
   Copy one project object and paste it after the previous one.
 
   category should be one of:
-  "Electronics", "Software", "Hardware", "Other"
+  "Electronics", "Software", " ", "Other"
 
   MEDIA:
 
@@ -40,7 +40,7 @@
 const projects = [
   {
     title: "Sim-Racing Shifter",
-    category: "Hardware",
+    category: "",
     date: "2026",
 
     summary: "Custom machined aluminum shifter that uses an ESP32 as a HID device, along with some microswitches and a golf ball to top it off.",
@@ -106,7 +106,7 @@ const projects = [
 
   {
     title: "ESP32 Mint Tin NES Emulator", 
-    category: "Electronics",
+    category: "Work In Progress",
     date: "2026",
 
     summary: "An ESP32 running Anemoia-ESP32, an NES emulator, in a mint tin with a small ST7789 display, with parts from an original NES controller connected to an 8-bit shift register to read button presses.",
@@ -148,7 +148,7 @@ const projects = [
 
   {
     title: "Self-Hosted Home Server (Z440)",
-    category: "Hardware",
+    category: "",
     date: "2026",
 
     summary: "Repurposed HP Z440 workstation as a self-hosted home server running Ubuntu Server, with multiple  containers for various services such as Tailscale.",
@@ -190,7 +190,7 @@ const projects = [
 
   {
     title: "KDX 200 replacement headlight mount",
-    category: "Hardware",
+    category: "",
     date: "2026",
 
     summary: "A replacement headlight mount for a KDX 200 dirtbike, designed in FreeCAD and 3D printed in PLA.",
@@ -221,6 +221,27 @@ const projects = [
     link: "",
     resources: []
   },
+
+    {
+    title: "Window Jumper Final Project ",
+    category: "",
+    date: "2026",
+
+    summary: "A game made for the final project in ICS3U. More of a proof of concept rather then a polished game. It makes heavy use of different methods and objects",
+    media: [
+      {
+        type: "image",
+        src: "images/windowJumper/1.png"
+      }
+      
+    ],
+    details: "After buying a KDX 200 headlight, it was missing the original bracket that held the light and let it pivot.",
+    challenges: "This was my first actual project in FreeCAD, and I had to learn how to use the software to make a part that would fit the light and the bike.",
+
+    outcome: "The bracket has outlived the 39 year old headlight plastic, and has survived a few crashes.",
+    link: "",
+    resources: []
+  }
 
 
   
