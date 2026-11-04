@@ -86,6 +86,10 @@ const projects = [
       {
         type: "video",
         src: "images/shifter/examplevideo.mp4"
+      },
+            {
+        type: "video",
+        src: "images/shifter/7.mp4"
       }
     ],
 
@@ -101,17 +105,28 @@ const projects = [
   },
 
   {
-    title: "ESP32 Mint Tin NES Emulator",
+    title: "ESP32 Mint Tin NES Emulator", 
     category: "Electronics",
     date: "2026",
 
     summary: "An ESP32 running Anemoia-ESP32, an NES emulator, in a mint tin with a small ST7789 display, with parts from an original NES controller connected to an 8-bit shift register to read button presses.",
 
     media: [
-      // Add your project photographs and videos here.
-      // Example:
-      // { type: "image", src: "images/esp32-front.jpg" },
-      // { type: "video", src: "videos/esp32-demo.mp4" }
+      
+     
+   {
+      type: "image",
+      src: "images/mint/2.png"
+    },
+    { 
+      type: "image",
+      src: "images/mint/1.jpg"
+    },
+        { 
+      type: "image",
+      src: "images/mint/3.png"
+    }
+
     ],
 
     details: "Write about the goal of the project, how you designed and assembled it, and what currently works. Include the problems you ran into and how you solved them.",
@@ -205,7 +220,8 @@ const projects = [
     outcome: "The bracket has outlived the 39 year old headlight plastic, and has survived a few crashes.",
     link: "",
     resources: []
-  }
+  },
+
 
   
 
