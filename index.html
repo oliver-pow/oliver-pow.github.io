@@ -1,0 +1,171 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Engineering, electronics and software projects.">
+  <title>Oliver Pow — Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="projects.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">OLIVER POW<span>.</span></a>
+
+    <nav aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="eyebrow">ENGINEERING · ELECTRONICS · SOFTWARE</p>
+
+      <h1>Building things.<br><span>Solving problems.</span></h1>
+
+      <p class="intro">
+        I'm Oliver Pow, a student interested in engineering, mechatronics,
+        electronics and software. This is a collection of projects I've
+        designed, built and learned from.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">
+          Explore projects <span aria-hidden="true">↘</span>
+        </a>
+        <a class="text-link" href="#about">More about me</a>
+      </div>
+
+      <div class="hero-meta">
+        <span><i class="status-dot"></i> Always learning, always building</span>
+        <span>Based in Ontario, Canada</span>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">SELECTED WORK</p>
+          <h2>Projects<span class="accent">.</span></h2>
+        </div>
+
+        <p class="section-note">
+          A growing collection of things I've worked on.
+        </p>
+      </div>
+
+      <div class="toolbar">
+        <div class="filters" id="filters" aria-label="Filter projects"></div>
+        <span class="project-count" id="project-count"></span>
+      </div>
+
+      <div class="project-grid" id="project-grid"></div>
+
+      <p class="empty-state" id="empty-state" hidden>
+        No projects in this category yet.
+      </p>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">TOOLS & KNOWLEDGE</p>
+          <h2>Skills<span class="accent">.</span></h2>
+        </div>
+
+        <p class="section-note">
+          Technologies and tools I have used or am currently learning.
+        </p>
+      </div>
+
+      <div class="skill-list">
+        <span>Java</span>
+        <span>Linux</span>
+        <span>Machining</span>
+        <span>Electronics Prototyping</span>
+        <span>ESP32 Development</span>
+        <span>Git</span>
+        <span>Docker on Linux Servers</span>
+        <span>Networking (Home and Server)</span>
+        <span>Troubleshooting Hardware</span>
+        <span>Arduino</span>
+        <span>FreeCAD</span>
+        <span>Replacement Part Design</span>
+        <span>PCB Design</span>
+        <span>3D Printing</span>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <p class="eyebrow">A LITTLE BACKGROUND</p>
+      <h2>About me<span class="accent">.</span></h2>
+
+      <div class="about-copy">
+        <p>
+          I'm a student with a strong interest in how things work, from
+          physical electronics and embedded systems to software and
+          computer hardware.
+        </p>
+
+        <p>
+          I enjoy learning independently, experimenting with ideas and
+          troubleshooting problems until I understand what's going on.
+          I'm particularly interested in engineering and mechatronics.
+        </p>
+
+        <p class="edit-hint">
+          Replace this text with your own story, interests, goals and
+          relevant experience.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <p class="eyebrow">GET IN TOUCH</p>
+      <h2>Have a question<br>or an opportunity?</h2>
+
+      <p>
+        I'm always interested in discussing projects, engineering and technology.
+      </p>
+
+      <a class="button primary" href="mailto:oliver@ispac.com">
+        oliver@ispac.com ↗
+      </a>
+
+      <div class="social-links">
+        <a href="https://github.com/oliver-pow" target="_blank" rel="noopener noreferrer">
+          GitHub ↗
+        </a>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Oliver Pow</span>
+    <span>Designed and Built by Oliver Pow with help from AI.</span>
+  </footer>
+
+  <!-- Project details dialog -->
+  <dialog id="project-dialog" class="project-dialog">
+    <button class="dialog-close" id="dialog-close" aria-label="Close project details">
+      ×
+    </button>
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <!-- Expanded image lightbox -->
+  <dialog class="image-lightbox" id="imageLightbox">
+    <button class="lightbox-close" aria-label="Close image">
+      &times;
+    </button>
+    <img id="lightboxImage" src="" alt="">
+  </dialog>
+</body>
+</html>
