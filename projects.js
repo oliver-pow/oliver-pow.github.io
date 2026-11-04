@@ -239,7 +239,7 @@ const projects = [
     challenges: "This was my first actual project in FreeCAD, and I had to learn how to use the software to make a part that would fit the light and the bike.",
 
     outcome: "The bracket has outlived the 39 year old headlight plastic, and has survived a few crashes.",
-    link: "",
+    link: "https://github.com/oliver-pow/windowJumper.git",
     resources: []
   }
 
