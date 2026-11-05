@@ -235,12 +235,66 @@ const projects = [
       }
       
     ],
-    details: "After buying a KDX 200 headlight, it was missing the original bracket that held the light and let it pivot.",
-    challenges: "This was my first actual project in FreeCAD, and I had to learn how to use the software to make a part that would fit the light and the bike.",
+    details: "A game made in Java using the HSA2 graphics library. It is very unpolished, but the goal of the project was to show that I am able to use different methods and objects to make a game. The game is a simple platformer where the player has to jump from window to window. The game is not finished, but it is a good proof of concept.",
+    challenges: "The main challenge I faced while making this game was the amount of time I had to work with. Originally I wanted to make it a lot more polished, including a level editor, proper art, and a lot more levels. However I ran out of time.",
 
-    outcome: "The bracket has outlived the 39 year old headlight plastic, and has survived a few crashes.",
+    outcome: "While the game somewhat works, it is not very polished, and I'm unhappy with the final product. There is lots of bugs, and there is basically no levels.",
     link: "https://github.com/oliver-pow/windowJumper.git",
     resources: []
+  },
+  {
+    title: "Arduino Humidity and Temperature Sensor for Vampire crabs",
+    category: "",
+    date: "2024",
+    media: [
+      {
+        type: "image",
+        src: "images/crabs/1.jpeg"
+      }
+    ],
+    details: "It uses a DHT11 humidity and temperature sensor to read the humidity and temperature of the tank, and then uses an Arduino TFT shield to display the readings.",
+    challenges: "My cheap TFT used an unusual firmware, so finding documentation on it was hard, but eventually I figured out the library files needed a small tweak.",
+    outcome: "For what it needed to do, it worked great. The humidity never really got out of hand, but if it did I was thinking of having a servo that opens and closes the air vent to manage the fresh air it got.",
+    summary: "A simple Arduino project that uses a humidity and temperature sensor to make sure the vampire crabs are living in the optimal conditions.",
+  },
+
+  {
+    summary: "A simple project that converts a standard PS2 keyboard to the proprietary keyboard connector and protocol used by the Macintosh Plus. ",
+    title: "PS2 Keyboard to Macintosh Plus Keyboard Adapter",
+    category: "",
+    date: "2023",
+    media: [
+      {
+        type: "image",
+        src: "images/ps2mac/1.png"
+      }
+    ],
+    details: "A simple project that converts a standard PS2 keyboard to the proprietary keyboard connector and protocol used by the Macintosh Plus. I used an Arduino Nano to both read th PS/2 keyboard inputs and convert them to the Macintosh Plus protocol. I made this because my Mac didn't come with a keyboard, and original keyboards are more expensive than the computer itself.",
+    challenges: "Fitting the Arduino Nano into they PS/2 keyboard to make it look clean, since all of the programming and logic was already made, it was mostly a soldering task",
+      resources: [
+      {
+        name: "mac-plus-ps2",
+        description: "Original GitHub repository for the adapter",
+        url: "https://github.com/trekawek/mac-plus-ps2.git"
+      }
+    ],
+    outcome: "The adapter works great, and I can now use my PS/2 keyboard with my Macintosh Plus. The next project is to make a floppy emulator.",
+  },
+
+  {
+    title: "Commdore 64 Power Supply ",
+    summary: "The original power supply for the Commodore 64 is known for failing after all this time. I made a new one from thrift store transformers.",
+    category: "",
+    date: "2022",
+    details: "My original power supply failed after plugging it in for the first time in probably 20 years. The C64 needs both 5V DC for the computer, and 9V AC only needed for some peripherals. I used two second hand transofrmers and wired them to the original power plug. It has worked great ever since, however I need two outlets to power it now.",
+    challenges: "Finding a 9V AC transformer was a bit of a challenge, as DC transformers are much more common. I also had to replace one of the ram chips and voltage regulator, I guess they blew at the same time the power supply did, maybe it spiked it with voltage before it died.",
+    outcome: "Even though it works, If i were to do it again today I would do it much differently. Instead of using already existing transformers, I would want to learn about making my own power supply, so that it would be more effecient and also so it wouldn't need two seperate plugs.",
+    media: [
+      {
+        type: "image",
+        src: "images/commodoreps/1.png"
+      }
+    ],
   }
 
 
