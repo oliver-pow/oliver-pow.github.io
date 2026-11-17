@@ -125,6 +125,10 @@ const projects = [
         { 
       type: "image",
       src: "images/mint/3.png"
+    },
+    {
+      type: "video",
+      src: "images/mint/4.mp4"
     }
 
     ],
@@ -189,6 +193,48 @@ const projects = [
   },
 
   {
+    title: "Remote Control Volume Controller",
+    category: "",
+    summary: "A Infrared receiver hooked up to a small motor to change the volume on my Denon Receiver. Makes it so I don't have to get up.",
+    details: "An Arduino Nano paired with a motor controller and an IR recevier salvaged from a scrap space heater. I found out the volume up code on my remote and then made it spin the motor when I press volume up or down. There is a 3D printed adapter to connect the motor to the spline of the volume knob. It is incased in a 3D printed housing and attached to the side of the A/V cabinet.",
+    challenges: "Had to figure out how to use the IR receiver module I found in the space heater. There wansn't any pinout online. Other than that it was straightforward.",
+    outcome: "It worked good enough for me, but since it's IR, its line of sight only, which can be annoying depending on where I'm sitting. It would also be better if I used a servo or stepper motor instead of a normal brushed motor, as I don't have super precise control of how much the motor spins, and therefor how much the volume changes. Another thing I thought about was using ultrasonic sound to communicate with the arduino (around 40kHz range), which would eliminate the need for line of sight, and was used in old tv remotes, but right now this works fine, and the high pitched sound would probably annoy the dog.",
+    media: [
+      {
+        type: "image",
+        src: "images/volumeCtl/1.jpg"
+      },
+
+      {
+        type: "image",
+        src: "images/volumeCtl/2.jpg"
+      },
+
+      {
+        type: "image",
+        src: "images/volumeCtl/3.jpg"
+      },
+      {
+        type: "image",
+        src: "images/volumeCtl/4.jpg"
+      },
+
+      {
+        type: "image",
+        src: "images/volumeCtl/5.jpg"
+      },
+    ]
+  },
+
+  {
+    title: "RC Crawler",
+    category: "Work In Progress",
+    summary: "A mostly 3D printed RC Crawler, including a high reduction gearbox, solid axle suspension, ESP32 remote controlled over ESP-NOW.",
+    details: "A low geared RC crawler for crawling over off-road terrain. maybe about 10% done.",
+    challenges: "Designing gears (bevel and spur) to be strong enough and also 3D printable was difficult, especially making something similar to a keyway so that the gears grip the axles and driveshafts. Designing the suspension and steering in a way that allowed the brass U-joints to still work was also new to me."
+  },
+
+  {
     title: "KDX 200 replacement headlight mount",
     category: "",
     date: "2026",
@@ -242,6 +288,7 @@ const projects = [
     link: "https://github.com/oliver-pow/windowJumper.git",
     resources: []
   },
+
   {
     title: "Arduino Humidity and Temperature Sensor for Vampire crabs",
     category: "",
@@ -255,7 +302,7 @@ const projects = [
     details: "It uses a DHT11 humidity and temperature sensor to read the humidity and temperature of the tank, and then uses an Arduino TFT shield to display the readings.",
     challenges: "My cheap TFT used an unusual firmware, so finding documentation on it was hard, but eventually I figured out the library files needed a small tweak.",
     outcome: "For what it needed to do, it worked great. The humidity never really got out of hand, but if it did I was thinking of having a servo that opens and closes the air vent to manage the fresh air it got.",
-    summary: "A simple Arduino project that uses a humidity and temperature sensor to make sure the vampire crabs are living in the optimal conditions.",
+    summary: "A simple Arduino project that uses a humidity and temperature sensor to make ure the vampire crabs are living in the optimal conditions.",
   },
 
   {
@@ -295,6 +342,17 @@ const projects = [
         src: "images/commodoreps/1.png"
       }
     ],
+  },
+
+  {
+    title: "GNOME Sticky Note Extension",
+    summary: "A simple note taking extension that makes a few expandable sticky notes pop up when you hover over them",
+    category: "Work In Progress",
+    date: "2026",
+    details: "I wanted a sticky note taking app that is always on top, so that I can see it no matter what I have open. The GNOME interface has a bar that is always visible that has things like the time and battery percentage, so this is a good spot to include my sticky notes. No other extension already does exactly what I want. ",
+    challenges: "",
+    outcome: "",
+
   }
 
 
