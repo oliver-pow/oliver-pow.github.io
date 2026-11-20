@@ -176,7 +176,7 @@ function openProject(project) {
         href="${escapeHTML(project.link)}"
         target="_blank"
         rel="noopener noreferrer">
-        View project link ↗
+        View repo/visit project  ↗
       </a>
     `
     : "";

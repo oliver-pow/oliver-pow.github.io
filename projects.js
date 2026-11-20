@@ -347,12 +347,26 @@ const projects = [
   {
     title: "GNOME Sticky Note Extension",
     summary: "A simple note taking extension that makes a few expandable sticky notes pop up when you hover over them",
-    category: "Work In Progress",
+    category: "",
     date: "2026",
-    details: "I wanted a sticky note taking app that is always on top, so that I can see it no matter what I have open. The GNOME interface has a bar that is always visible that has things like the time and battery percentage, so this is a good spot to include my sticky notes. No other extension already does exactly what I want. ",
-    challenges: "",
-    outcome: "",
-
+    media: [
+      {
+        type: "image",
+        src: "images/stickynotes/1.png"
+      }
+    ],
+    details: "I wanted a sticky note taking app that is always on top, so that I can see it no matter what I have open. The GNOME interface has a bar that is always visible that has things like the time and battery percentage, so this is a good spot to include my sticky notes. No other extension already does exactly what I want. This was my first java script program. I used what I knew from Java and python and tried my best. I used AI a lot with this one, which normally I don't like doing, but it was helpful as it helped me learn. ",
+    challenges: "I have never made a GNOME extension, or made anything in javascript, so it was a big change for me. I used AI to both code a lot and help me learn what things are doing, along with the official guide for GNOME extensions, link below.",
+    outcome: "I have sticky notes that are always on top, and a little more understanding of javascript. My next extension I'll have a better idea of where to start.",
+      resources: [
+      {
+        name: "GJS Guide",
+        description: "GJS - A Guide to JavaScript for GNOME",
+        url: "https://gjs.guide/"
+      }
+      
+    ],
+    link: "https://github.com/oliver-pow/barstickynotes-oliver"
   }
 
 
